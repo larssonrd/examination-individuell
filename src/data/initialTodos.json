@@ -1,0 +1,22 @@
+[
+  {
+    "id": "c25f7e45-4c4f-45a4-b42d-f7a9b9ca9d7f",
+    "content": "Buy groceries",
+    "completed": false
+  },
+  {
+    "id": "3d3c9d46-52ea-4c3c-8783-c6f8e6d8d56a",
+    "content": "Call the dentist",
+    "completed": false
+  },
+  {
+    "id": "b6dbd5f5-5f33-4341-aa61-0c8a6b7a294f",
+    "content": "Finish the exam",
+    "completed": true
+  },
+  {
+    "id": "f84ec0f3-3a6f-4496-8a6b-1e9e9c34d7b0",
+    "content": "Walk the dog",
+    "completed": false
+  }
+]

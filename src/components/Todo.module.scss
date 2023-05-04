@@ -1,0 +1,98 @@
+.todoContainer {
+  width: 100%;
+  position: relative;
+
+  > img {
+    cursor: pointer;
+  }
+
+  .todo {
+    width: 100%;
+    color: lightgray;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1rem;
+    padding-left: 50px;
+    list-style: none;
+    border-bottom: 1px solid rgb(57, 58, 75);
+    display: flex;
+    align-items: center;
+
+    &.active {
+      text-decoration: line-through;
+      color: rgb(57, 58, 75);
+    }
+
+    &.whiteBg {
+      background-color: white;
+      color: black;
+      border-color: lightgray;
+
+      &.active {
+        color: rgb(57, 58, 75);
+      }
+    }
+  }
+
+  .todoText {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .circle {
+    border: 1px solid rgb(57, 58, 75);
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+
+    img {
+      display: none;
+    }
+
+    &.active {
+      background: linear-gradient(
+        90deg,
+        rgb(87, 221, 255) 0%,
+        rgb(192, 88, 243) 100%
+      );
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        display: inline-block;
+      }
+    }
+  }
+
+  .deleteIcon {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    transform: translateY(-50%);
+
+    &.show {
+      display: inline-block;
+    }
+  }
+
+  &:hover .deleteIcon {
+    display: inline-block;
+  }
+}
+
+.editTodo {
+  background-color: transparent;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
