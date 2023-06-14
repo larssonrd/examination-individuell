@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectDarkMode } from './store/slices/themeSlice';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import StartPage from './pages/startPage';
+import StartPage from './pages/StartPage';
 import Todos from './components/Todos';
 
 function App() {
